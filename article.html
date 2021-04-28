@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <div class="header-desktop">
+          <div class="header-desktop__top">
+            <div class="container header-desktop__container"><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+              <div class="header-desktop__bar">
+                <div class="header__button header__button--dropdown header__button--lang"><a href="#" data-toggle-dropdown>Русский</a>
+                  <div class="header__dropdown" data-dropdown>
+                    <ul>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Español</a></li>
+                      <li><a href="#">العربية</a></li>
+                      <li><a href="#">中文</a></li>
+                      <li><a href="#">Deutsch</a></li>
+                      <li><a href="#">Français</a></li>
+                      <li><a href="#">Italiano</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__button header__button--dropdown header__button--currency"><a href="#" data-toggle-dropdown>USD</a>
+                  <div class="header__dropdown" data-dropdown>
+                    <ul>
+                      <li><a href="#">EUR</a></li>
+                      <li><a href="#">AED</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__button header__button--login"><!--<a class="modal-open" href="#login">Войти</a>--><a href="#" data-toggle-dropdown>Личный кабинет</a>
+                  <div class="header__dropdown" data-dropdown>
+                    <ul>
+                      <li><a href="user-profile.html">Аккаунт</a></li>
+                      <li><a href="#">Выйти</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-desktop__bottom">
+            <div class="container">
+              <ul class="header-desktop__menu">
+                <li><a href="catalog.html">Автомобили</a></li>
+                <li><a href="#">Условия аренды</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a class="header-desktop__submenu-link" href="#" data-toggle-dropdown><span>Марки</span></a>
+                  <div class="header-desktop__submenu" data-dropdown>
+                    <div class="header-desktop__menu-search">
+                      <label>Найдите авто в алфавитном порядке или воспользуйтесь формой поиска</label>
+                      <div>
+                        <input id="menu-search" type="text" placeholder="Поиск по названию марки" autocomplete="off">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999">
+                          <path fill="currentColor" d="M508.874 478.708L360.142 329.976c28.21-34.827 45.191-79.103 45.191-127.309C405.333 90.917 314.416 0 202.666 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c48.206 0 92.482-16.982 127.309-45.191l148.732 148.732c4.167 4.165 10.919 4.165 15.086 0l15.081-15.082c4.165-4.166 4.165-10.92-.001-15.085zM202.667 362.667c-88.229 0-160-71.771-160-160s71.771-160 160-160 160 71.771 160 160-71.771 160-160 160z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul id="menu-search-list">
+                      <li><a href="#"><span><img src="img/brands/alfa-romeo.png" alt=""></span><span><span>Alfa Romeo</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/aston-martin.png" alt=""></span><span><span>Aston Martin</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/audi.png" alt=""></span><span><span>Audi</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/bentley.png" alt=""></span><span><span>Bentley</span><span>23 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/bmw.png" alt=""></span><span><span>BMW</span><span>43 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/bugatti.png" alt=""></span><span><span>Bugatti</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/cadillac.png" alt=""></span><span><span>Cadillac</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/chevrolet.png" alt=""></span><span><span>Chevrolet</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/chrysler.png" alt=""></span><span><span>Chrysler</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/dodge.png" alt=""></span><span><span>Dodge</span><span>43 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/ferrari.png" alt=""></span><span><span>Ferrari</span><span>57 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/fiat.png" alt=""></span><span><span>Fiat</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/ford.png" alt=""></span><span><span>Ford</span><span>6 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/gmc.png" alt=""></span><span><span>GMC</span><span>3 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/honda.png" alt=""></span><span><span>Honda</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/hyundai.png" alt=""></span><span><span>Hyundai</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/infiniti.png" alt=""></span><span><span>Infiniti</span><span>6 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/jaguar.png" alt=""></span><span><span>Jaguar</span><span>10 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/jeep.png" alt=""></span><span><span>Jeep</span><span>23 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/kia.png" alt=""></span><span><span>Kia</span><span>43 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/lamborghini.png" alt=""></span><span><span>Lamborghini</span><span>52 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/lexus.png" alt=""></span><span><span>Lexus</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/lincoln.png" alt=""></span><span><span>Lincoln</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/maserati.png" alt=""></span><span><span>Maserati</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/mazda.png" alt=""></span><span><span>Mazda</span><span>3 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/mclaren.png" alt=""></span><span><span>McLaren</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/mercedes.png" alt=""></span><span><span>Mercedes</span><span>136 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/mini.png" alt=""></span><span><span>Mini</span><span>0 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/mitsubishi.png" alt=""></span><span><span>Mitsubishi</span><span>8 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/nissan.png" alt=""></span><span><span>Nissan</span><span>4 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/peugeot.png" alt=""></span><span><span>Peugeot</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/porsche.png" alt=""></span><span><span>Porsche</span><span>6 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/range-rover.png" alt=""></span><span><span>Range Rover</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/renault.png" alt=""></span><span><span>Renault</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/rolls-royce.png" alt=""></span><span><span>Rolls-Royce</span><span>43 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/suzuki.png" alt=""></span><span><span>Suzuki</span><span>5 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/tesla.png" alt=""></span><span><span>Tesla</span><span>36 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/toyota.png" alt=""></span><span><span>Toyota</span><span>3 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/volkswagen.png" alt=""></span><span><span>Volkswagen</span><span>23 авто</span></span></a></li>
+                      <li><a href="#"><span><img src="img/brands/volvo.png" alt=""></span><span><span>Volvo</span><span>43 авто</span></span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="catalog-with-driver.html">Аренда с водителем</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-mobile">
+          <div class="header-mobile__top"><a class="logo header-mobile__logo" href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="header-mobile__bar">
+              <button class="header-mobile__menu-btn"><span></span><span></span><span></span></button>
+            </div>
+          </div>
+          <div class="header-mobile__menu">
+            <div class="header-mobile__menu-inner">
+              <div class="header-mobile__menu-btns">
+                <div>
+                  <div class="header__button header__button--login"><!--<a class="modal-open" href="#login"><span>Войти</span></a>--><a href="#" data-toggle-dropdown><span>Личный кабинет</span></a>
+                    <div class="header__dropdown" data-dropdown>
+                      <ul>
+                        <li><a href="user-profile.html">Аккаунт</a></li>
+                        <li><a href="#">Выйти</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="header__button header__button--dropdown header__button--currency"><a href="#" data-toggle-dropdown><span>USD</span></a>
+                    <div class="header__dropdown" data-dropdown>
+                      <ul>
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">AED</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="header__button header__button--dropdown header__button--lang header__button--text-overflow"><a href="#" data-toggle-dropdown><span>Русский</span></a>
+                    <div class="header__dropdown" data-dropdown>
+                      <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">العربية</a></li>
+                        <li><a href="#">中文</a></li>
+                        <li><a href="#">Deutsch</a></li>
+                        <li><a href="#">Français</a></li>
+                        <li><a href="#">Italiano</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li><a href="catalog.html">Автомобили</a></li>
+                <li><a href="#">Условия аренды</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a class="header-mobile__menu-submenu-link" href="#">Марки</a>
+                  <ul class="header-mobile__menu-submenu">
+                    <li><a href="#"><span><img src="img/brands/alfa-romeo.png" alt=""></span><span><span>Alfa Romeo</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/aston-martin.png" alt=""></span><span><span>Aston Martin</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/audi.png" alt=""></span><span><span>Audi</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/bentley.png" alt=""></span><span><span>Bentley</span><span>23 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/bmw.png" alt=""></span><span><span>BMW</span><span>43 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/bugatti.png" alt=""></span><span><span>Bugatti</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/cadillac.png" alt=""></span><span><span>Cadillac</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/chevrolet.png" alt=""></span><span><span>Chevrolet</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/chrysler.png" alt=""></span><span><span>Chrysler</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/dodge.png" alt=""></span><span><span>Dodge</span><span>43 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/ferrari.png" alt=""></span><span><span>Ferrari</span><span>57 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/fiat.png" alt=""></span><span><span>Fiat</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/ford.png" alt=""></span><span><span>Ford</span><span>6 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/gmc.png" alt=""></span><span><span>GMC</span><span>3 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/honda.png" alt=""></span><span><span>Honda</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/hyundai.png" alt=""></span><span><span>Hyundai</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/infiniti.png" alt=""></span><span><span>Infiniti</span><span>6 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/jaguar.png" alt=""></span><span><span>Jaguar</span><span>10 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/jeep.png" alt=""></span><span><span>Jeep</span><span>23 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/kia.png" alt=""></span><span><span>Kia</span><span>43 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/lamborghini.png" alt=""></span><span><span>Lamborghini</span><span>52 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/lexus.png" alt=""></span><span><span>Lexus</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/lincoln.png" alt=""></span><span><span>Lincoln</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/maserati.png" alt=""></span><span><span>Maserati</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/mazda.png" alt=""></span><span><span>Mazda</span><span>3 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/mclaren.png" alt=""></span><span><span>McLaren</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/mercedes.png" alt=""></span><span><span>Mercedes</span><span>136 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/mini.png" alt=""></span><span><span>Mini</span><span>0 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/mitsubishi.png" alt=""></span><span><span>Mitsubishi</span><span>8 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/nissan.png" alt=""></span><span><span>Nissan</span><span>4 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/peugeot.png" alt=""></span><span><span>Peugeot</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/porsche.png" alt=""></span><span><span>Porsche</span><span>6 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/range-rover.png" alt=""></span><span><span>Range Rover</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/renault.png" alt=""></span><span><span>Renault</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/rolls-royce.png" alt=""></span><span><span>Rolls-Royce</span><span>43 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/suzuki.png" alt=""></span><span><span>Suzuki</span><span>5 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/tesla.png" alt=""></span><span><span>Tesla</span><span>36 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/toyota.png" alt=""></span><span><span>Toyota</span><span>3 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/volkswagen.png" alt=""></span><span><span>Volkswagen</span><span>23 авто</span></span></a></li>
+                    <li><a href="#"><span><img src="img/brands/volvo.png" alt=""></span><span><span>Volvo</span><span>43 авто</span></span></a></li>
+                  </ul>
+                </li>
+                <li><a href="catalog-with-driver.html">Аренда с водителем</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Main content-->
+      <main class="main">
+        <div class="mt-35 mb-200 md:mb-100">
+          <div class="container">
+            <div class="breadcrumbs mb-40">
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li>Как выбрать экономичный автомобиль</li>
+              </ul>
+            </div>
+            <div class="section-with-sidebar">
+              <div class="section-with-sidebar__container">
+                <h2 class="block-title mb-30">Как выбрать экономичный автомобиль</h2>
+                <div class="article">
+                  <div class="article__top">
+                    <div class="date-block">сегодня</div>
+                  </div>
+                  <div class="article__content"><img src="img/news/articles/1/1.jpg" alt="">
+                    <p>В жизни современного украинца не получится обойтись без передвижения на автотранспортном средстве. Эксперты компании Rent Car указывают на то, что самыми комфортными являются надежные и безопасные личные автомобили. Не секрет, что приобрести и содержать даже старенькое отечественное авто, а не то, что иномарку, готов себе позволить далеко не каждый человек.</p>
+                    <p>Если денежных средств на приобретение личной машины не хватает, то идеальным решением может стать прокат авто. Чтобы вышеуказанная услуга приносила потенциальному заказчику исключительно положительные эмоции и не обернулась чередой проблем потенциальному заказчику исключительно положительные эмоции и не обернулась чередой проблем.</p>
+                    <p>Прокат авто следует производить по некоторым строго установленным правилам:</p>
+                    <p>— следует прочитать договор аренды внимательно – данная услуга всегда имеет некоторые нюансы, но каждый пункт должен прописываться в соответствующем договоре. До того, как поставить свою подпись на договоре и отправиться в путь на прокатном авто, выбранном в каталоге на сайте rent-car.kiev.ua, придется ознакомиться с условиями аренды. Обязательно придется уточнить все особенности страхования, уточнить необходимость дополнительных расходов при нарушении какого-либо пункта соглашения;</p>
+                    <p>— обсудить все дополнительные условия можно по круглосуточному телефону +38(063)-148-56-78 – сразу следует оговорить, необходима ли блокировка залоговой суммы на кредитной карте клиента до окончания прокатного срока. Обязательно необходимо до подписания договора уточнить, когда прокатчик может пользоваться вышеуказанной фиксированной суммой денег и термин снятия блокировки;</p>
+                    <p class="text-16 font-medium">Читайте также: <a href="#">Самые экономичные машины по расходу топлива</a></p>
+                    <p>Победителем среди авто, работающих на дизельном топливе, является Opel Corsa. Он тратит всего 3,4 л топлива в городе и 3 л – на загородной трассе. Модель ценится за броский молодежно-спортивный дизайн, высокий уровень безопасности и удобства. В тройке лидеров находятся также Citroen C4 (Cactus) и Vini One D. Citroen C4 расходует в городе 3,8 л, а за городом – 3,4 л топлива. Благодаря просторному салону, высокому уровню комфорта и безопасности Cactus подходит для семей с маленькими детьми.</p>
+                  </div>
+                  <div class="article__bottom">
+                    <div class="article__views">47 просмотров</div>
+                    <div class="article__social"><a class="social-icon social-icon--facebook" href="#"></a><a class="social-icon social-icon--twitter" href="#"></a></div>
+                  </div>
+                </div>
+                <div class="page-title mb-40">Комментарии</div>
+                <div class="comments-block mb-90 lg:mb-0">
+                  <!--Есть комментарии-->
+                  <div class="comments mb-40">
+                    <div class="comment">
+                      <div class="comment__top">
+                        <div class="comment__name comment__name--accent">abc123</div>
+                      </div>
+                      <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut im ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</div>
+                      <div class="comment__bottom">
+                        <div class="date-block comment__date">02.04.2020 12:00</div>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="comment__top">
+                        <div class="comment__name comment__name--accent">ьпалпьальв</div>
+                      </div>
+                      <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut im ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</div>
+                      <div class="comment__bottom">
+                        <div class="date-block comment__date">02.04.2020 12:00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Если есть комментарии и если их нет--><!--
+                  <div class="comments-user-section"><a class="modal-open" href="#login">Войдите</a> или <a class="modal-open" href="#signup">зарегистрируйтесь</a>, чтобы оставлять комментарии</div>-->
+                  <!--Если есть комментарии и вход выполнен-->
+                  <div class="comments-user-section"><a href="#" data-write-a-comment>Написать комментарий</a></div>
+                  <!--Если нет комментариев и вход выполнен--><!--
+                  <div class="comments-user-section">
+                    <div class="comments-user-section__no-comments-text">Комментариев не найдено. Вы можете быть первым, кто оставит комментарий.</div><a href="#" data-write-a-comment>Написать комментарий</a>
+                  </div>-->
+                  <form class="write-a-comment max-w-765">
+                    <textarea name="new-comment" required></textarea>
+                    <button title="Отправить сообщение">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23" height="23">
+                        <path fill="currentColor" d="M464 4.3L16 262.7C-7 276-4.7 309.9 19.8 320L160 378v102c0 30.2 37.8 43.3 56.7 20.3l60.7-73.8 126.4 52.2c19.1 7.9 40.7-4.2 43.8-24.7l64-417.1C515.7 10.2 487-9 464 4.3zM192 480v-88.8l54.5 22.5L192 480zm224-30.9l-206.2-85.2 199.5-235.8c4.8-5.6-2.9-13.2-8.5-8.4L145.5 337.3 32 290.5 480 32l-64 417.1z"></path>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="section-with-sidebar__sidebar">
+                <div class="sidebar-partnership mb-50">
+                  <div class="sidebar-partnership__title">Партнерство</div>
+                  <div class="sidebar-partnership__text">Присоединяйтесь к нашему уникальному комплексному процессу  аренды автомобилей</div><a class="sidebar-partnership__btn" href="#">Запрос на партнерство</a>
+                </div>
+                <div class="sidebar-choose-a-car">
+                  <div class="sidebar-choose-a-car__logo"><img src="img/logo-sidebar-choose-a-car.png" alt=""></div>
+                  <div class="sidebar-choose-a-car__text">Лучшие авто для путешествия</div><a class="arrow-link arrow-link--white sidebar-choose-a-car__btn" href="#">Выбрать авто</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-0 lg:mt-50">
+              <div class="page-title mb-25">Читайте также</div>
+              <div class="articles-slider single-owl-carousel">
+                <div class="owl-carousel"><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a><a class="articles-slider__item" href="#">
+                    <div class="articles-slider__item-img"><img src="img/news/articles/slider-1.jpg" alt=""></div>
+                    <div class="articles-slider__item-content">
+                      <div class="date-block articles-slider__item-date">02.06.2020</div>
+                      <div class="articles-slider__item-title">Полезные советы для автомобилистов в жаркий день</div>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__side-1"><a class="logo footer__logo" href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="footer__lists">
+              <ul>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="advantages.html">Почему мы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+              <ul>
+                <li><a href="features-of-renting-in-the-uae.html">Особенности аренды в ОАЭ</a></li>
+                <li><a href="terms-of-cooperation.html">Условия сотрудничества</a></li>
+                <li><a href="advertising-placement.html">Размещение рекламы</a></li>
+                <li><!--<a class="modal-open" href="#login-partner">Кабинет партнера</a>--><a href="partner-my-cars.html">Кабинет партнера</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+              <ul>
+                <li><a href="assistance.html">Assistance</a></li>
+                <li><a href="catalog.html">Автомобили</a></li>
+                <li><a href="brands.html">Марки авто</a></li>
+                <li><a href="catalog-with-driver.html">Аренда с водителем</a></li>
+                <li><a href="rent-terms.html">Условия аренды</a></li>
+              </ul>
+            </div>
+            <div class="footer__social"><a class="social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21">
+                  <path fill="#03a9f4" d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"></path>
+                </svg></a><a class="social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#3b5999" d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0 8.064 0 9.95 7.85 9.674 9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z"></path>
+                </svg></a><a class="social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#C60000" d="M9.939 7.856a.75.75 0 00-1.134.644v7c0 .585.638.939 1.134.645l5.869-3.495a.751.751 0 00.001-1.289zm.366 6.325v-4.36l3.655 2.183z"></path>
+                  <path fill="#C60000" d="M19.904 3.271c-4.653-.691-11.153-.691-15.808 0C2.234 3.547.767 5.009.447 6.907c-.596 3.523-.596 6.664 0 10.186.32 1.899 1.787 3.36 3.649 3.636 2.332.346 5.124.519 7.915.519 2.786 0 5.571-.172 7.894-.518 1.86-.276 3.326-1.737 3.648-3.636.596-3.523.596-6.665 0-10.188-.32-1.897-1.787-3.359-3.649-3.635zm2.17 13.573c-.213 1.256-1.173 2.222-2.39 2.402-4.518.671-10.838.671-15.368-.001-1.218-.181-2.179-1.146-2.391-2.402-.574-3.394-.574-6.291 0-9.687.213-1.256 1.173-2.22 2.392-2.402 2.262-.335 4.973-.503 7.682-.503 2.711 0 5.422.168 7.684.503 1.218.181 2.179 1.146 2.391 2.402.574 3.396.574 6.293 0 9.688z"></path>
+                </svg></a><a class="social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                  <linearGradient id="a" x1="42.966" x2="469.034" y1="469.03" y2="42.962" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ffd600"></stop>
+                    <stop offset=".5" stop-color="#ff0100"></stop>
+                    <stop offset="1" stop-color="#d800b9"></stop>
+                  </linearGradient>
+                  <linearGradient id="b" x1="163.043" x2="348.954" y1="348.954" y2="163.043" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ff6400"></stop>
+                    <stop offset=".5" stop-color="#ff0100"></stop>
+                    <stop offset="1" stop-color="#fd0056"></stop>
+                  </linearGradient>
+                  <linearGradient id="c" x1="370.929" x2="414.373" y1="141.068" y2="97.624" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#f30072"></stop>
+                    <stop offset="1" stop-color="#e50097"></stop>
+                  </linearGradient>
+                  <path fill="url(#a)" d="M510.46 150.453c-1.245-27.25-5.573-45.86-11.901-62.14a125.466 125.466 0 00-29.528-45.344 125.503 125.503 0 00-45.344-29.535c-16.285-6.325-34.89-10.649-62.14-11.887C334.247.297 325.523 0 256 0s-78.246.297-105.547 1.54c-27.25 1.245-45.855 5.573-62.14 11.901A125.466 125.466 0 0042.968 42.97a125.488 125.488 0 00-29.535 45.34c-6.325 16.285-10.649 34.894-11.887 62.14C.297 177.754 0 186.473 0 255.996c0 69.527.297 78.25 1.547 105.55 1.242 27.247 5.57 45.856 11.898 62.142a125.451 125.451 0 0029.528 45.34 125.433 125.433 0 0045.343 29.527c16.282 6.332 34.891 10.656 62.141 11.902 27.305 1.246 36.023 1.54 105.547 1.54 69.523 0 78.246-.294 105.547-1.54 27.25-1.246 45.855-5.57 62.14-11.902a130.879 130.879 0 0074.868-74.868c6.332-16.285 10.656-34.894 11.902-62.14C511.703 334.242 512 325.523 512 256c0-69.527-.297-78.246-1.54-105.547zM464.38 359.45c-1.137 24.961-5.309 38.516-8.813 47.535a84.775 84.775 0 01-48.586 48.586c-9.02 3.504-22.574 7.676-47.535 8.813-26.988 1.234-35.086 1.492-103.445 1.492-68.363 0-76.457-.258-103.45-1.492-24.956-1.137-38.51-5.309-47.534-8.813a79.336 79.336 0 01-29.434-19.152 79.305 79.305 0 01-19.152-29.434c-3.504-9.02-7.676-22.574-8.813-47.535-1.23-26.992-1.492-35.09-1.492-103.445 0-68.36.262-76.453 1.492-103.45 1.14-24.96 5.309-38.515 8.813-47.534a79.367 79.367 0 0119.152-29.438 79.261 79.261 0 0129.438-19.148c9.02-3.508 22.574-7.676 47.535-8.817 26.992-1.23 35.09-1.492 103.445-1.492h-.004c68.356 0 76.453.262 103.45 1.496 24.96 1.137 38.511 5.309 47.534 8.813a79.375 79.375 0 0129.434 19.148 79.261 79.261 0 0119.149 29.438c3.507 9.02 7.68 22.574 8.816 47.535 1.23 26.992 1.492 35.09 1.492 103.445 0 68.36-.258 76.453-1.492 103.45zm0 0"></path>
+                  <path fill="url(#b)" d="M255.996 124.54c-72.601 0-131.457 58.858-131.457 131.46s58.856 131.457 131.457 131.457c72.606 0 131.461-58.855 131.461-131.457s-58.855-131.46-131.46-131.46zm0 216.792c-47.125-.004-85.332-38.207-85.328-85.336 0-47.125 38.203-85.332 85.332-85.332 47.129.004 85.332 38.207 85.332 85.332 0 47.129-38.207 85.336-85.336 85.336zm0 0"></path>
+                  <path fill="url(#c)" d="M423.371 119.348c0 16.965-13.754 30.718-30.719 30.718-16.968 0-30.722-13.754-30.722-30.718 0-16.97 13.754-30.723 30.722-30.723 16.965 0 30.72 13.754 30.72 30.723zm0 0"></path>
+                </svg></a></div>
+            <div class="footer__copy">©2020 Все права защищены</div>
+          </div>
+          <div class="footer__side-2">
+            <ul>
+              <li><a href="#">Аренда авто в аэропорту Дубай</a></li>
+              <li><a href="#">Аренда авто в аэропорту Абу-Даби</a></li>
+              <li><a href="#">Аренда авто в аэропорту Шарджа</a></li>
+              <li><a href="#">Аренда авто в аэропорту Рас-эль-Хайма</a></li>
+            </ul>
+            <div class="footer__payments"><img src="img/payments/mastercard.svg" alt=""><img src="img/payments/mastercard2.svg" alt=""><img src="img/payments/visa.svg" alt=""><img src="img/payments/visa2.svg" alt=""></div>
+          </div>
+        </div>
+      </footer>
+      <button class="to-top-button"></button>
+      <!--Modals-->
+      <div class="modal mfp-hide" id="login">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <div class="modal__user-actions"><a class="modal-open" href="#signup">Регистрация</a><span>Вход</span></div>
+          <form class="modal__form">
+            <div class="modal__text-divider">с помощью</div>
+            <div class="modal__social-login"><a class="modal__social-btn modal__social-btn--fb" href="#" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#FFF" d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--tw" href="#" title="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#FFF" d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--gg" href="#" title="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M120 256c0-25.367 6.989-49.13 19.131-69.477v-86.308H52.823C18.568 144.703 0 198.922 0 256s18.568 111.297 52.823 155.785h86.308v-86.308C126.989 305.13 120 281.367 120 256z"></path>
+                  <path fill="#fff" d="M256 392l-60 60 60 60c57.079 0 111.297-18.568 155.785-52.823v-86.216h-86.216C305.044 385.147 281.181 392 256 392z"></path>
+                  <path fill="#fff" d="M139.131 325.477l-86.308 86.308a260.085 260.085 0 0022.158 25.235C123.333 485.371 187.62 512 256 512V392c-49.624 0-93.117-26.72-116.869-66.523z"></path>
+                  <path fill="#fff" d="M512 256a258.24 258.24 0 00-4.192-46.377l-2.251-12.299H256v120h121.452a135.385 135.385 0 01-51.884 55.638l86.216 86.216a260.085 260.085 0 0025.235-22.158C485.371 388.667 512 324.38 512 256z"></path>
+                  <path fill="#fff" d="M352.167 159.833l10.606 10.606 84.853-84.852-10.606-10.606C388.668 26.629 324.381 0 256 0l-60 60 60 60c36.326 0 70.479 14.146 96.167 39.833z"></path>
+                  <path fill="#fff" d="M256 120V0C187.62 0 123.333 26.629 74.98 74.98a259.849 259.849 0 00-22.158 25.235l86.308 86.308C162.883 146.72 206.376 120 256 120z"></path>
+                </svg></a></div>
+            <div class="modal__text-divider">или</div>
+            <div class="input-group input-group--with-icon">
+              <input class="modal-focus" type="text" name="login-username" required>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="17" height="17">
+                <path fill="#828C98" d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zm0 240c-57.897 0-105-47.103-105-105S198.103 30 256 30s105 47.103 105 105-47.103 105-105 105zM297.833 301h-83.667C144.964 301 76.669 332.951 31 401.458V512h450V401.458C435.397 333.05 367.121 301 297.833 301zm153.168 181H61v-71.363C96.031 360.683 152.952 331 214.167 331h83.667c61.215 0 118.135 29.683 153.167 79.637V482z"></path>
+              </svg>
+            </div>
+            <div class="input-group input-group--with-icon">
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="login-password" required>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867" width="17" height="17">
+                <path fill="#828C98" d="M409.6 170.667h-17.067V153.6C392.439 68.808 323.725.094 238.933 0c-84.792.094-153.506 68.808-153.6 153.6v17.067H68.267c-9.426 0-17.067 7.641-17.067 17.067V460.8c0 9.426 7.641 17.067 17.067 17.067H409.6c9.426 0 17.067-7.641 17.067-17.067V187.733c0-9.425-7.641-17.066-17.067-17.066zM119.467 153.6c0-65.98 53.487-119.467 119.467-119.467S358.4 87.62 358.4 153.6v17.067H119.467V153.6zm273.066 290.133h-307.2V204.8h307.2v238.933z"></path>
+                <path fill="#828C98" d="M287.209 290.111c-7.211-20.472-26.571-34.152-48.276-34.111-28.211-.053-51.124 22.773-51.177 50.984-.041 21.705 13.639 41.065 34.111 48.276v37.274c0 9.426 7.641 17.067 17.067 17.067S256 401.959 256 392.533V355.26c26.609-9.372 40.582-38.541 31.209-65.149zm-48.276 34.156c-9.426 0-17.067-7.641-17.067-17.067s7.641-17.067 17.067-17.067S256 297.774 256 307.2s-7.641 17.067-17.067 17.067z"></path>
+              </svg>
+            </div>
+            <div class="modal__both-sides-group">
+              <div class="checkbox-group">
+                <input id="login-remember-me" type="checkbox">
+                <label for="login-remember-me">Запомнить меня</label>
+              </div><a class="modal__link modal-open" href="#forgot-password">Забыли пароль?</a>
+            </div>
+            <div class="modal__btn-group">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Войти</button>
+            </div>
+            <div class="modal__bottom-text">У меня еще нет аккаунта, хочу <a class="modal-open" href="#signup">зарегистрироваться</a></div>
+          </form>
+        </div>
+      </div>
+      <div class="modal mfp-hide" id="login-partner">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <div class="modal__user-actions"><a class="modal-open" href="#signup-partner">Регистрация</a><span>Вход</span></div>
+          <form class="modal__form">
+            <div class="modal__text-divider">с помощью</div>
+            <div class="modal__social-login"><a class="modal__social-btn modal__social-btn--fb" href="#" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#FFF" d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--tw" href="#" title="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#FFF" d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--gg" href="#" title="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M120 256c0-25.367 6.989-49.13 19.131-69.477v-86.308H52.823C18.568 144.703 0 198.922 0 256s18.568 111.297 52.823 155.785h86.308v-86.308C126.989 305.13 120 281.367 120 256z"></path>
+                  <path fill="#fff" d="M256 392l-60 60 60 60c57.079 0 111.297-18.568 155.785-52.823v-86.216h-86.216C305.044 385.147 281.181 392 256 392z"></path>
+                  <path fill="#fff" d="M139.131 325.477l-86.308 86.308a260.085 260.085 0 0022.158 25.235C123.333 485.371 187.62 512 256 512V392c-49.624 0-93.117-26.72-116.869-66.523z"></path>
+                  <path fill="#fff" d="M512 256a258.24 258.24 0 00-4.192-46.377l-2.251-12.299H256v120h121.452a135.385 135.385 0 01-51.884 55.638l86.216 86.216a260.085 260.085 0 0025.235-22.158C485.371 388.667 512 324.38 512 256z"></path>
+                  <path fill="#fff" d="M352.167 159.833l10.606 10.606 84.853-84.852-10.606-10.606C388.668 26.629 324.381 0 256 0l-60 60 60 60c36.326 0 70.479 14.146 96.167 39.833z"></path>
+                  <path fill="#fff" d="M256 120V0C187.62 0 123.333 26.629 74.98 74.98a259.849 259.849 0 00-22.158 25.235l86.308 86.308C162.883 146.72 206.376 120 256 120z"></path>
+                </svg></a></div>
+            <div class="modal__text-divider">или</div>
+            <div class="input-group input-group--with-icon">
+              <input class="modal-focus" type="text" name="login-partner-username" required>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="17" height="17">
+                <path fill="#828C98" d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zm0 240c-57.897 0-105-47.103-105-105S198.103 30 256 30s105 47.103 105 105-47.103 105-105 105zM297.833 301h-83.667C144.964 301 76.669 332.951 31 401.458V512h450V401.458C435.397 333.05 367.121 301 297.833 301zm153.168 181H61v-71.363C96.031 360.683 152.952 331 214.167 331h83.667c61.215 0 118.135 29.683 153.167 79.637V482z"></path>
+              </svg>
+            </div>
+            <div class="input-group input-group--with-icon">
+              <input type="tel" name="login-partner-phone" required>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                <path fill="#828C98" d="M401 0H111C94.458 0 81 13.458 81 30v452c0 16.542 13.458 30 30 30h290c16.542 0 30-13.458 30-30V30c0-16.542-13.458-30-30-30zM111 30h290l.002 61H111V30zm0 91h290v270H111V121zm290 361H111v-61h290.016l.002 60.999A.093.093 0 01401 482z"></path>
+                <path fill="#828C98" d="M296 46h-80c-8.284 0-15 6.716-15 15s6.716 15 15 15h80c8.284 0 15-6.716 15-15s-6.716-15-15-15z"></path>
+                <circle cx="256" cy="452" r="15" fill="#828C98"></circle>
+              </svg>
+            </div>
+            <div class="input-group input-group--with-icon">
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="login-partner-password" required>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867" width="17" height="17">
+                <path fill="#828C98" d="M409.6 170.667h-17.067V153.6C392.439 68.808 323.725.094 238.933 0c-84.792.094-153.506 68.808-153.6 153.6v17.067H68.267c-9.426 0-17.067 7.641-17.067 17.067V460.8c0 9.426 7.641 17.067 17.067 17.067H409.6c9.426 0 17.067-7.641 17.067-17.067V187.733c0-9.425-7.641-17.066-17.067-17.066zM119.467 153.6c0-65.98 53.487-119.467 119.467-119.467S358.4 87.62 358.4 153.6v17.067H119.467V153.6zm273.066 290.133h-307.2V204.8h307.2v238.933z"></path>
+                <path fill="#828C98" d="M287.209 290.111c-7.211-20.472-26.571-34.152-48.276-34.111-28.211-.053-51.124 22.773-51.177 50.984-.041 21.705 13.639 41.065 34.111 48.276v37.274c0 9.426 7.641 17.067 17.067 17.067S256 401.959 256 392.533V355.26c26.609-9.372 40.582-38.541 31.209-65.149zm-48.276 34.156c-9.426 0-17.067-7.641-17.067-17.067s7.641-17.067 17.067-17.067S256 297.774 256 307.2s-7.641 17.067-17.067 17.067z"></path>
+              </svg>
+            </div>
+            <div class="modal__both-sides-group">
+              <div class="checkbox-group">
+                <input id="login-partner-remember-me" type="checkbox">
+                <label for="login-partner-remember-me">Запомнить меня</label>
+              </div><a class="modal__link modal-open" href="#forgot-password">Забыли пароль?</a>
+            </div>
+            <div class="modal__btn-group">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Войти</button>
+            </div>
+            <div class="modal__bottom-text">У меня еще нет аккаунта, хочу <a class="modal-open" href="#signup-partner">зарегистрироваться</a></div>
+          </form>
+        </div>
+      </div>
+      <div class="modal mfp-hide" id="signup">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <div class="modal__user-actions"><span>Регистрация</span><a class="modal-open" href="#login">Вход</a></div>
+          <form class="modal__form">
+            <div class="modal__text-divider">с помощью</div>
+            <div class="modal__social-login"><a class="modal__social-btn modal__social-btn--fb" href="#" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#FFF" d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--tw" href="#" title="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#FFF" d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--gg" href="#" title="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M120 256c0-25.367 6.989-49.13 19.131-69.477v-86.308H52.823C18.568 144.703 0 198.922 0 256s18.568 111.297 52.823 155.785h86.308v-86.308C126.989 305.13 120 281.367 120 256z"></path>
+                  <path fill="#fff" d="M256 392l-60 60 60 60c57.079 0 111.297-18.568 155.785-52.823v-86.216h-86.216C305.044 385.147 281.181 392 256 392z"></path>
+                  <path fill="#fff" d="M139.131 325.477l-86.308 86.308a260.085 260.085 0 0022.158 25.235C123.333 485.371 187.62 512 256 512V392c-49.624 0-93.117-26.72-116.869-66.523z"></path>
+                  <path fill="#fff" d="M512 256a258.24 258.24 0 00-4.192-46.377l-2.251-12.299H256v120h121.452a135.385 135.385 0 01-51.884 55.638l86.216 86.216a260.085 260.085 0 0025.235-22.158C485.371 388.667 512 324.38 512 256z"></path>
+                  <path fill="#fff" d="M352.167 159.833l10.606 10.606 84.853-84.852-10.606-10.606C388.668 26.629 324.381 0 256 0l-60 60 60 60c36.326 0 70.479 14.146 96.167 39.833z"></path>
+                  <path fill="#fff" d="M256 120V0C187.62 0 123.333 26.629 74.98 74.98a259.849 259.849 0 00-22.158 25.235l86.308 86.308C162.883 146.72 206.376 120 256 120z"></path>
+                </svg></a></div>
+            <div class="modal__text-divider">или</div>
+            <div class="input-group input-group--with-label">
+              <label>Логин <span class="text-red">*</span></label>
+              <input class="modal-focus" type="text" name="signup-username" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Email <span class="text-red">*</span></label>
+              <input type="email" name="signup-email" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="signup-password" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Повторите пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="signup-password-2" required>
+            </div>
+            <div class="modal__checkbox-group">
+              <div class="checkbox-group">
+                <input id="signup-checkbox-1" type="checkbox" checked required>
+                <label for="signup-checkbox-1">Принимаю <a href="service-rules.html">Правила сервиса</a> и <a href="privacy-policy.html">Политику конфиденциальности</a></label>
+              </div>
+              <div class="checkbox-group">
+                <input id="signup-checkbox-2" type="checkbox">
+                <label for="signup-checkbox-2">Да, присылать мне скидки, предложения, обновления</label>
+              </div>
+            </div>
+            <div class="captcha-placeholder">Здесь будет капча</div>
+            <div class="modal__btn-group">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Зарегистрироваться</button>
+            </div>
+            <div class="modal__bottom-text">У меня уже <a class="modal-open" href="#login">есть аккаунт</a></div>
+          </form>
+        </div>
+      </div>
+      <div class="modal mfp-hide" id="signup-partner">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <div class="modal__user-actions"><span>Регистрация</span><a class="modal-open" href="#login-partner">Вход</a></div>
+          <form class="modal__form">
+            <div class="modal__text-divider">с помощью</div>
+            <div class="modal__social-login"><a class="modal__social-btn modal__social-btn--fb" href="#" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#FFF" d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--tw" href="#" title="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#FFF" d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"></path>
+                </svg></a><a class="modal__social-btn modal__social-btn--gg" href="#" title="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M120 256c0-25.367 6.989-49.13 19.131-69.477v-86.308H52.823C18.568 144.703 0 198.922 0 256s18.568 111.297 52.823 155.785h86.308v-86.308C126.989 305.13 120 281.367 120 256z"></path>
+                  <path fill="#fff" d="M256 392l-60 60 60 60c57.079 0 111.297-18.568 155.785-52.823v-86.216h-86.216C305.044 385.147 281.181 392 256 392z"></path>
+                  <path fill="#fff" d="M139.131 325.477l-86.308 86.308a260.085 260.085 0 0022.158 25.235C123.333 485.371 187.62 512 256 512V392c-49.624 0-93.117-26.72-116.869-66.523z"></path>
+                  <path fill="#fff" d="M512 256a258.24 258.24 0 00-4.192-46.377l-2.251-12.299H256v120h121.452a135.385 135.385 0 01-51.884 55.638l86.216 86.216a260.085 260.085 0 0025.235-22.158C485.371 388.667 512 324.38 512 256z"></path>
+                  <path fill="#fff" d="M352.167 159.833l10.606 10.606 84.853-84.852-10.606-10.606C388.668 26.629 324.381 0 256 0l-60 60 60 60c36.326 0 70.479 14.146 96.167 39.833z"></path>
+                  <path fill="#fff" d="M256 120V0C187.62 0 123.333 26.629 74.98 74.98a259.849 259.849 0 00-22.158 25.235l86.308 86.308C162.883 146.72 206.376 120 256 120z"></path>
+                </svg></a></div>
+            <div class="modal__text-divider">или</div>
+            <div class="input-group input-group--with-label">
+              <label>Логин <span class="text-red">*</span></label>
+              <input class="modal-focus" type="text" name="signup-partner-username" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Email <span class="text-red">*</span></label>
+              <input type="email" name="signup-partner-email" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Телефон <span class="text-red">*</span></label>
+              <input type="tel" name="signup-partner-phone" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="signup-partner-password" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Повторите пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="signup-partner-password-2" required>
+            </div>
+            <div class="modal__checkbox-group">
+              <div class="checkbox-group">
+                <input id="signup-partner-checkbox-1" type="checkbox" checked required>
+                <label for="signup-partner-checkbox-1">Принимаю <a href="service-rules.html">Правила сервиса</a> и <a href="privacy-policy.html">Политику конфиденциальности</a></label>
+              </div>
+              <div class="checkbox-group">
+                <input id="signup-partner-checkbox-2" type="checkbox">
+                <label for="signup-partner-checkbox-2">Да, присылать мне скидки, предложения, обновления</label>
+              </div>
+            </div>
+            <div class="captcha-placeholder">Здесь будет капча</div>
+            <div class="modal__btn-group">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Зарегистрироваться</button>
+            </div>
+            <div class="modal__bottom-text">У меня уже <a class="modal-open" href="#login-partner">есть аккаунт</a></div>
+          </form>
+        </div>
+      </div>
+      <div class="modal mfp-hide" id="forgot-password">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <form class="modal__form">
+            <div class="modal__title">Восстановление пароля</div>
+            <div class="modal__text">Введите адрес эл.почты.<br>Инструкция по изменению пароля будет отправлена на ваш зарегистрированный адрес.</div>
+            <div class="input-group input-group--with-label">
+              <label>Email <span class="text-red">*</span></label>
+              <input class="modal-focus" type="email" name="forgot-password-email" required>
+            </div>
+            <div class="modal__btn-group mb-0">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Продолжить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal mfp-hide" id="new-password">
+        <div class="modal__inner">
+          <button class="close-button modal__close"></button>
+          <form class="modal__form">
+            <div class="modal__title">Изменение пароля</div>
+            <div class="input-group input-group--with-label">
+              <label>Пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="new-password-password" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Повторите пароль <span class="text-red">*</span></label>
+              <button class="input-group-password-viewer" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505.752 240.915l-89.088-89.088c-88.737-88.737-232.591-88.737-321.327 0L6.248 240.915c-8.331 8.331-8.331 21.839 0 30.17l89.088 89.088c88.737 88.737 232.591 88.737 321.327 0l89.088-89.088c8.332-8.331 8.332-21.839.001-30.17zm-119.258 89.088c-72.074 72.074-188.913 72.074-260.987 0L51.503 256l74.003-74.003c72.074-72.074 188.913-72.074 260.987 0L460.497 256l-74.003 74.003z"></path>
+                  <path d="M256 149.333c-58.907 0-106.667 47.759-106.667 106.667S197.093 362.667 256 362.667 362.667 314.907 362.667 256 314.907 149.333 256 149.333zM256 320c-35.343 0-64-28.657-64-64s28.657-64 64-64 64 28.657 64 64-28.657 64-64 64z"></path>
+                </svg>
+              </button>
+              <input type="password" name="new-password-password-2" required>
+            </div>
+            <div class="modal__btn-group mb-0">
+              <button class="btn-outlined btn-outlined--theme-accent3 w-full" type="submit">Изменить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal--gray mfp-hide" id="partner">
+        <div class="modal__inner">
+          <button class="close-button modal__close modal__close--inside"></button>
+          <form class="modal__form">
+            <div class="modal__title">Форма для партнерства</div>
+            <div class="modal__radio-group">
+              <div class="radio-group">
+                <input id="partner-radio-1" type="radio" name="partner-radio" checked>
+                <label for="partner-radio-1">Фрилансер или агент</label>
+              </div>
+              <div class="radio-group">
+                <input id="partner-radio-2" type="radio" name="partner-radio">
+                <label for="partner-radio-2">Компания</label>
+              </div>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>ФИО / название компании <span class="text-red">*</span></label>
+              <input type="text" name="partner-username" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Номер телефона <span class="text-red">*</span></label>
+              <input type="tel" name="partner-phone" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Email <span class="text-red">*</span></label>
+              <input type="email" name="partner-email" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Вебсайт <span class="text-red">*</span></label>
+              <input type="text" name="partner-site" required>
+            </div>
+            <div class="input-group input-group--with-label">
+              <label>Штаты (Эмираты) <span class="text-red">*</span></label>
+              <div class="custom-select-wrapper">
+                <select class="custom-select" name="partner-country" data-minimum-results-for-search="0" required>
+                  <option label="Выберите из списка"></option>
+                  <option value="1">Afghanistan</option>
+                  <option value="2">Albania</option>
+                  <option value="3">Algeria</option>
+                  <option value="4">Andorra</option>
+                  <option value="5">Angola</option>
+                  <option value="6">Antigua and Barbuda</option>
+                  <option value="7">Argentina</option>
+                  <option value="8">Armenia</option>
+                  <option value="9">Australia</option>
+                  <option value="10">Austria</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group input-group--with-label input-group--with-label-white">
+              <label>Сообщение</label>
+              <textarea name="partner-message"></textarea>
+            </div>
+            <div class="modal__btn-group"><!--
+              <button class="btn-outlined btn-outlined--theme-accent w-full" type="submit">Отправить запрос</button>--><a class="btn-outlined btn-outlined--theme-accent w-full modal-open" href="#thanks">Отправить запрос</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal--wide-lg mfp-hide" id="thanks">
+        <div class="modal__inner">
+          <button class="close-button modal__close modal__close--inside"></button>
+          <div class="modal__form modal__form--gratitude">
+            <div class="modal__gratitude-text">Спасибо, запрос отправлен.<br>В ближайшее время с Вами свяжется наш менеджер
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="#079C49" d="M256 512C114.836 512 0 397.164 0 256S114.836 0 256 0s256 114.836 256 256-114.836 256-256 256zm0-480C132.48 32 32 132.48 32 256s100.48 224 224 224 224-100.48 224-224S379.52 32 256 32zm0 0"></path>
+                <path fill="#079C49" d="M232 341.332c-4.098 0-8.191-1.555-11.309-4.691l-69.332-69.332c-6.25-6.254-6.25-16.387 0-22.637s16.383-6.25 22.637 0l58.024 58.027 127.363-127.36c6.25-6.25 16.383-6.25 22.633 0s6.25 16.384 0 22.634L243.348 336.64A16.03 16.03 0 01232 341.332zm0 0"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Scripts-->
+      <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.closest%2CNodeList.prototype.forEach%2CCustomEvent%2CElement.prototype.append"></script>
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+      <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+      <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+      <script src="libs/object-fit-images/ofi.min.js"></script>
+      <script src="libs/select2/select2.full.changed.js"></script>
+      <script src="libs/flatpickr/flatpickr.min.js"></script>
+      <script src="libs/flatpickr/l10n/ru.js"></script>
+      <script src="libs/flatpickr/l10n/ar.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/modals.js"></script>
+    </div>
+  </body>
+</html>
