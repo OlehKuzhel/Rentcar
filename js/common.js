@@ -5,6 +5,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* global $, objectFitImages, flatpickr*/
   // object-fit and object-position polyfill
+
+  $('body').on('click', '.logout-link, .user-block__logout', function(event) {
+    event.preventDefault()
+    // console.log('clikc')
+    $('#frm-logout').trigger('submit')
+  })
+
+
+  // $(function() {
+    // Multiple images preview in browser
+    var imagesPreview = function(input, placeToInsertImagePreview) {
+
+        if (input.files) {
+            var filesAmount = input.files.length;
+            console.log(filesAmount)
+
+            for (var i = 0; i < filesAmount; i++) {
+                var reader = new FileReader();
+
+                reader.onload = function(event) {
+                    $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                }
+
+                reader.readAsDataURL(input.files[i]);
+            }
+        }
+
+    };
+
+    $('#user-add-new-files').on('change', function() {
+        imagesPreview(this, 'div.image-cards');
+    });
+  // });
+
   objectFitImages(); // Device changed event
 
   function isDesktop() {
@@ -433,6 +467,8 @@ document.addEventListener('DOMContentLoaded', function () {
     heroTabs.onclick = function (e) {
       var btn = e.target;
       if (btn.tagName !== 'BUTTON') return;
+      if (btn.classList.contains("w-full")) return;
+      console.log(btn)
       var btns = this.querySelectorAll('button');
       btns.forEach(function (btn) {
         btn.classList.remove('active');
@@ -692,6 +728,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // https://flatpickr.js.org/localization/
     // https://unpkg.com/browse/flatpickr@4.6.3/dist/l10n/
     // locale: 'ru',
+    allowInput:true,
     monthSelectorType: 'static',
     minDate: Date.now(),
     onReady: function onReady() {

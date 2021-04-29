@@ -375,7 +375,7 @@
                     </div>
                     <div>
                       <div>
-                        <button class="btn w-full"><span>Поиск</span></button>
+                        <button type="submit" class="btn w-full"><span>Поиск</span></button>
                       </div>
                       <div>
                         <div class="checkbox-group-2 checkbox-group-2--white">
@@ -390,10 +390,11 @@
                   <form>
                     <div>
                       <div>
+                      <div>
                         <div class="input-group input-group--with-label mb-0">
                           <label>Место подачи автомобиля</label>
                           <div class="custom-select-wrapper">
-                            <select class="custom-select custom-select--bold custom-select--uppercase" name="hero-search-2-city" data-dropdown-css-class="custom-select-dropdown custom-select-dropdown--bold custom-select-dropdown--uppercase">
+                            <select required class="custom-select custom-select--bold custom-select--uppercase" name="hero-search-2-city" data-dropdown-css-class="custom-select-dropdown custom-select-dropdown--bold custom-select-dropdown--uppercase">
                               <option label="Выберите из списка"></option>
                               <option value="1">Дубай (международный аэропорт дубай (DXB)</option>
                               <option value="2">Абу-даби</option>
@@ -403,6 +404,28 @@
                           </div>
                         </div>
                       </div>
+                      <div>
+                                    <div class="input-group input-group--with-label mb-0">
+                                        <label>Класс авто</label>
+                                        <div class="custom-select-wrapper">
+                                            <select class="custom-select custom-select--bold custom-select--uppercase" name="car_class" data-dropdown-css-class="custom-select-dropdown custom-select-dropdown--bold custom-select-dropdown--uppercase" data-placeholder="Выберите из списка">
+                                                <option label="Выберите из списка"></option>
+                                                <option value="">Не выбрано</option>
+                                                <option value="vip">VIP класс</option>
+                                                <option value="elites">Элит класс</option>
+                                                <option value="super_car">Суперкары</option>
+                                                <option value="sport_class">Спорт класс</option>
+                                                <option value="suv">Внедорожники</option>
+                                                <option value="business">Бизнес класс</option>
+                                                <option value="middle">Средний класс</option>
+                                                <option value="econom">Эконом класс</option>
+                                                <option value="microbus">Микроавтобусы</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div>
                       <div>
                         <div class="input-group input-group--with-label input-group--with-icon input-group--input-bold input-group--input-fz-sm mb-0">
                           <label>Дата</label>
@@ -454,8 +477,9 @@
                         </div>
                       </div>
                     </div>
+                    </div>
                     <div>
-                      <button class="btn w-full"><span>Поиск</span></button>
+                      <button type="submit" class="btn w-full"><span>Поиск</span></button>
                     </div>
                   </form>
                 </div>
